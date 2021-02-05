@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>COVID19 | Números</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .conteudo img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h3>Nova busca</h3>
+            </div>
+
+            <div class="card-body">
+                <form action="/covid-estado" method="POST">
+                    <div class="form-group">
+                        <label for="estado">Buscar por Estado (UF)</label>
+                        <input class="form-control" type="text" name="estado" id="estado" placeholder="letras minúsculas, exemplo: sp | rj | mt">
+                        <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">
+                    </div>
+                </form>
+            </div>
+            <div class="card-body">
+                <form action="/covid-pais" method="POST">
+                    <div class="form-group">
+                        <label for="pais">Pais</label>
+                        <input class="form-control" type="text" name="pais" id="pais" placeholder="países em inglês, exemplo: brazil | france | italy">
+                        <input type="submit" class="btn btn-outline-success mt-2" value="Buscar">
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
